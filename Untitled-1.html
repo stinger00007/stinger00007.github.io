@@ -1,0 +1,31 @@
+$.getJSON("biodata.json", function (data) {
+var items = [];
+$.each(data, function (key, val) {
+items.push("<div class='card'>");
+  items.push("<div class='card-header'>");
+    items.push("<img src='"+val.gambar+"' alt='Profile Image' class='profile-img'>");
+    items.push ("</div>")
+  items.push("<div class='card-body'>")
+    items.push("<p class='full-name'>+'"val.Full-name"'+</p>")
+    items.push("<p class='username'>+'"val.username+"'+</p>")
+    items.push("<p class='city'>+'"val.city+"'+</p>")
+    items.push("<p class='desc'>+'"val.kalimat+"'+</p>")
+    items.push("<p>")
+      items.push("<a href='#' class='social-icon facebook'><i class='fab fa-facebook-f'></i></a>")
+      items.push("<a href='#' class="social-icon twitter"><i class='fab fa-twitter'></i></a>")
+      items.push("<a href='#' class="social-icon Instagram"><i class='fab fa-Instagram'></i></a>")
+      items.push("</p>")
+    items.push("<div class='card-footer'>")
+      items.push("<div class='col vr'>")
+        items.push("<p><span class='count'>+'"Followers"'+</span>Followers</p>")
+        items.push ("</div>")
+      items.push("<div class='col'>")
+        items.push("<p><span class='count'>+'"Following"'+</span> Following</p>")
+        items.push ("</div>")
+      items.push ("</div>")
+    items.push ("</div>")
+  items.push ("</div>")
+});
+$("
+<div />", { "class": "mydata", html: items.join("") }).appendTo("div.isi-card");
+});
